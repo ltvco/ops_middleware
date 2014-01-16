@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Efficiency 2.0"]
-  s.date = %q{2011-06-15}
+  s.date = %q{2011-09-05}
   s.description = %q{Adds middleware for debugging purposes}
   s.email = %q{tech@efficiency20.com}
   s.extra_rdoc_files = [
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/efficiency20/ops_middleware}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Collection of useful middleware for exposing information about deployed Rack applications}
   s.test_files = [
     "spec/ops/hostname_spec.rb",

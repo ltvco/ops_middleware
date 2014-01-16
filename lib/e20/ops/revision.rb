@@ -19,11 +19,15 @@ module E20
           end
         end
       end
+      
+      def self.revision_from_git
+        @revision_from_git ||= `git rev-parse HEAD`.strip
+      end
 
     private
 
       def revision_from_git
-        @revision_from_git ||= `git rev-parse HEAD`.strip
+        self.class.revision_from_git
       end
 
       def revision_file

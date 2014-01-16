@@ -1,9 +1,11 @@
+require 'socket'
+
 module E20
   module Ops
     class Hostname
 
       def to_s
-        @hostname ||= `hostname`.strip
+        @hostname ||= Socket.gethostname.strip
       end
 
     end
