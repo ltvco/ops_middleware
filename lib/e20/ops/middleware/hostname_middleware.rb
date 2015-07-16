@@ -12,7 +12,7 @@ module E20
 
         def call(env)
           status, headers, body = @app.call(env)
-          headers["X-Served-By"] = @hostname.to_s
+          headers["X-Served-By"] = "#{@hostname.to_s} (#{@pid})"
           if (logger = @options[:logger])
             logger.info "[#{self.class.name}] Running on: #{@hostname} (#{@pid})"
           end
